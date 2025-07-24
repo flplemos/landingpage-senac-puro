@@ -1,0 +1,38 @@
+        #responsavel-legal-section {
+            /* display: none; Remova esta linha daqui, o JS vai controlar */
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px; /* Arredondar bordas com Bootstrap */
+        }
+        #responsavel-legal-section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .main-header img {
+            width: 100%; /* Faz a imagem preencher a largura total do seu contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Remove espaço extra abaixo da imagem */
+            max-width: 100%; /* Garante que a imagem não transborde */
+        }
+
+        body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        color: #333;
+    }
+
+    
+    .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin-top: 20px; 
+        margin-bottom: 40px; 
+    }

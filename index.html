@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Forms Senac</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <img src="Topo_Site.png" alt="Logo Senac Fecomércio Sesc Rio Grande do Norte">
+    </header>
+    <div class="container mt-5">
+        <h2 class="mb-4">Formulário Senac</h2>
+        <form class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mb-3">
+                        <label for="cpf" class="form-label">CPF:</label>
+                        <input type="text" class="form-control" id="cpf" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe seu CPF.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mb-3">
+                        <label for="nascimento" class="form-label">Data de nascimento:</label>
+                        <input type="date" class="form-control" id="nascimento" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe sua data de nascimento.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mb-3">
+                        <label for="rg" class="form-label">RG:</label>
+                        <input type="text" class="form-control" id="rg" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe seu RG.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome completo (Sem abreviações, conforme documento de
+                    identificação):</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">
+                    Por favor, informe seu nome completo.
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Contato telefônico (DDD):</label>
+                        <input type="text" class="form-control" id="telefone" required placeholder="Apenas números: 84 XXXXX XXXX">
+                        <div class="invalid-feedback">
+                            Por favor, informe seu telefone.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe um e-mail válido.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mb-3">
+                        <label for="cep-input" class="form-label">CEP:</label>
+                        <input type="text" class="form-control" id="cep-input" required maxlength="9">
+                        <div class="invalid-feedback">
+                            Por favor, informe seu CEP.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="mb-3">
+                        <label for="logradouro" class="form-label">Rua:</label>
+                        <input type="text" class="form-control" id="logradouro" required readonly>
+                        <div class="invalid-feedback">
+                            Por favor, informe a rua.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="mb-3">
+                        <label for="numero" class="form-label">Número:</label>
+                        <input type="text" class="form-control" id="numero" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe o número.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="mb-3">
+                        <label for="complemento" class="form-label">Complemento:</label>
+                        <input type="text" class="form-control" id="complemento">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="mb-3">
+                        <label for="bairro" class="form-label">Bairro:</label>
+                        <input type="text" class="form-control" id="bairro" required readonly>
+                        <div class="invalid-feedback">
+                            Por favor, informe o bairro.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="localidade" class="form-label">Cidade:</label>
+                        <input type="text" class="form-control" id="localidade" required readonly>
+                        <div class="invalid-feedback">
+                            Por favor, informe a cidade.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="uf" class="form-label">Estado (UF):</label>
+                        <input type="text" class="form-control" id="uf" required readonly maxlength="2">
+                        <div class="invalid-feedback">
+                            Por favor, informe o estado.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <p class="form-label">Sexo:</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="masculino" name="sexo" value="masculino" required>
+                            <label class="form-check-label" for="masculino">Masculino</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="feminino" name="sexo" value="feminino">
+                            <label class="form-check-label" for="feminino">Feminino</label>
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor, selecione seu sexo.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="raca" class="form-label">Raça/Cor:</label>
+                        <select class="form-select" id="raca" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="branca">Branca</option>
+                            <option value="preta">Preta</option>
+                            <option value="parda">Parda</option>
+                            <option value="amarela">Amarela</option>
+                            <option value="indigena">Indígena</option>
+                            <option value="nao-declarada">Não declarada</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor, selecione sua raça/cor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="responsavel-legal-section" class="mt-4 p-3 bg-light rounded shadow-sm">
+                <h3 class="mb-3">Dados do Responsável Legal</h3>
+
+                <div class="mb-3">
+                    <label for="resp-name" class="form-label">Nome completo (Sem abreviações, conforme documento de
+                        identificação):</label>
+                    <input type="text" class="form-control" id="resp-name">
+                    <div class="invalid-feedback">
+                        Por favor, informe o nome do responsável.
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="resp-nascimento" class="form-label">Data de nascimento:</label>
+                            <input type="date" class="form-control" id="resp-nascimento">
+                            <div class="invalid-feedback">
+                                Por favor, informe a data de nascimento do responsável.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="resp-rg" class="form-label">RG:</label>
+                            <input type="text" class="form-control" id="resp-rg">
+                            <div class="invalid-feedback">
+                                Por favor, informe o RG do responsável.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="resp-cpf" class="form-label">CPF:</label>
+                            <input type="text" class="form-control" id="resp-cpf">
+                            <div class="invalid-feedback">
+                                Por favor, informe o CPF do responsável.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="resp-telefone" class="form-label">Contato telefônico (DDD):</label>
+                            <input type="number" class="form-control" id="resp-telefone" placeholder="Apenas números 84 XXXXX XXXX">
+                            <div class="invalid-feedback">
+                                Por favor, informe o telefone do responsável.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="resp-email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="resp-email">
+                            <div class="invalid-feedback">
+                                Por favor, informe um e-mail válido para o responsável.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="resp-cep-input" class="form-label">CEP do Responsável:</label>
+                            <input type="text" class="form-control" id="resp-cep-input" maxlength="9">
+                            <div class="invalid-feedback">
+                                Por favor, informe o CEP do responsável.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-8">
+                        <div class="mb-3">
+                            <label for="resp-logradouro" class="form-label">Rua do Responsável:</label>
+                            <input type="text" class="form-control" id="resp-logradouro" readonly>
+                            <div class="invalid-feedback">
+                                Por favor, informe a rua do responsável.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="mb-3">
+                            <label for="resp-numero" class="form-label">Número do Responsável:</label>
+                            <input type="text" class="form-control" id="resp-numero">
+                            <div class="invalid-feedback">
+                                Por favor, informe o número do responsável.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="mb-3">
+                            <label for="resp-complemento" class="form-label">Complemento do Responsável:</label>
+                            <input type="text" class="form-control" id="resp-complemento">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="mb-3">
+                            <label for="resp-bairro" class="form-label">Bairro do Responsável:</label>
+                            <input type="text" class="form-control" id="resp-bairro" readonly>
+                            <div class="invalid-feedback">
+                                Por favor, informe o bairro do responsável.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="resp-localidade" class="form-label">Cidade do Responsável:</label>
+                            <input type="text" class="form-control" id="resp-localidade" readonly>
+                            <div class="invalid-feedback">
+                                Por favor, informe a cidade do responsável.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="resp-uf" class="form-label">Estado (UF) do Responsável:</label>
+                            <input type="text" class="form-control" id="resp-uf" readonly maxlength="2">
+                            <div class="invalid-feedback">
+                                Por favor, informe o estado do responsável.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <p class="form-label">Sexo do Responsável:</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="resp-masculino" name="resp-sexo"
+                                    value="masculino">
+                                <label class="form-check-label" for="resp-masculino">Masculino</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="resp-feminino" name="resp-sexo"
+                                    value="feminino">
+                                <label class="form-check-label" for="resp-feminino">Feminino</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, selecione o sexo do responsável.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="resp-raca" class="form-label">Raça/Cor:</label>
+                            <select class="form-select" id="resp-raca">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="branca">Branca</option>
+                                <option value="preta">Preta</option>
+                                <option value="parda">Parda</option>
+                                <option value="amarela">Amarela</option>
+                                <option value="indigena">Indígena</option>
+                                <option value="nao-declarada">Não declarada</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor, selecione sua raça/cor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content-center mt-4 mb-3">
+                <button type="submit" class="btn btn-primary shadow">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
