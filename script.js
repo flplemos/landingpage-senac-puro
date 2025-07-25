@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dataNascimentoInput.addEventListener('change', toggleResponsavelFields);
 
     // URL do seu endpoint de backend
-    const backendUrl = 'http://localhost:3000/api/submit-form'; // ATUALIZE ESTA URL QUANDO FIZER O DEPLOY
+    const backendUrl = 'https://senac-forms-api.onrender.com/api/submit-form'; // ATUALIZE ESTA URL QUANDO FIZER O DEPLOY
 
 
     // --- Validação no Submit do Formulário (Bootstrap + Validações Customizadas) ---
