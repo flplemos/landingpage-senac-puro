@@ -18,7 +18,17 @@
         <h2 class="mb-4">Formulário Senac</h2>
         <form class="needs-validation" novalidate>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome completo (Sem abreviações, conforme documento de
+                        identificação):</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <div class="invalid-feedback">
+                        Por favor, informe seu nome completo.
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="mb-3">
                         <label for="cpf" class="form-label">CPF:</label>
                         <input type="text" class="form-control" id="cpf" required>
@@ -27,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="mb-3">
                         <label for="nascimento" class="form-label">Data de nascimento:</label>
                         <input type="date" class="form-control" id="nascimento" required>
@@ -36,31 +46,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="mb-3">
-                        <label for="rg" class="form-label">RG:</label>
-                        <input type="text" class="form-control" id="rg" required>
-                        <div class="invalid-feedback">
-                            Por favor, informe seu RG.
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <div class="mb-3">
-                <label for="name" class="form-label">Nome completo (Sem abreviações, conforme documento de
-                    identificação):</label>
-                <input type="text" class="form-control" id="name" required>
-                <div class="invalid-feedback">
-                    Por favor, informe seu nome completo.
-                </div>
-            </div>
+
 
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Contato telefônico (DDD):</label>
-                        <input type="text" class="form-control" id="telefone" required placeholder="Apenas números: 84 XXXXX XXXX">
+                        <input type="text" class="form-control" id="telefone" required
+                            placeholder="Apenas números: 84 XXXXX XXXX">
                         <div class="invalid-feedback">
                             Por favor, informe seu telefone.
                         </div>
@@ -151,7 +146,8 @@
                     <div class="mb-3">
                         <p class="form-label">Sexo:</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="masculino" name="sexo" value="masculino" required>
+                            <input class="form-check-input" type="radio" id="masculino" name="sexo" value="masculino"
+                                required>
                             <label class="form-check-label" for="masculino">Masculino</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -196,7 +192,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-6">
                         <div class="mb-3">
                             <label for="resp-nascimento" class="form-label">Data de nascimento:</label>
                             <input type="date" class="form-control" id="resp-nascimento">
@@ -205,16 +201,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="mb-3">
-                            <label for="resp-rg" class="form-label">RG:</label>
-                            <input type="text" class="form-control" id="resp-rg">
-                            <div class="invalid-feedback">
-                                Por favor, informe o RG do responsável.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-6">
                         <div class="mb-3">
                             <label for="resp-cpf" class="form-label">CPF:</label>
                             <input type="text" class="form-control" id="resp-cpf">
@@ -229,7 +216,8 @@
                     <div class="col-12 col-md-6">
                         <div class="mb-3">
                             <label for="resp-telefone" class="form-label">Contato telefônico (DDD):</label>
-                            <input type="number" class="form-control" id="resp-telefone" placeholder="Apenas números 84 XXXXX XXXX">
+                            <input type="number" class="form-control" id="resp-telefone"
+                                placeholder="Apenas números 84 XXXXX XXXX">
                             <div class="invalid-feedback">
                                 Por favor, informe o telefone do responsável.
                             </div>

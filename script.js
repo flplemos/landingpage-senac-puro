@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const mainFields = {
         name: document.getElementById('name'),
         nascimento: dataNascimentoInput,
-        rg: document.getElementById('rg'),
         cpf: document.getElementById('cpf'),
         telefone: document.getElementById('telefone'),
         email: document.getElementById('email'),
@@ -35,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const respFields = [
         document.getElementById('resp-name'),
         document.getElementById('resp-nascimento'),
-        document.getElementById('resp-rg'),
         document.getElementById('resp-cpf'),
         document.getElementById('resp-telefone'),
         document.getElementById('resp-email'),
@@ -427,7 +425,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const formData = {
             cpf: mainFields.cpf.value,
             nascimento: mainFields.nascimento.value,
-            rg: mainFields.rg.value,
             name: mainFields.name.value,
             telefone: mainFields.telefone.value,
             email: mainFields.email.value,
@@ -445,7 +442,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (responsavelSection.style.display === 'block') {
             formData['resp-name'] = document.getElementById('resp-name').value;
             formData['resp-nascimento'] = document.getElementById('resp-nascimento').value;
-            formData['resp-rg'] = document.getElementById('resp-rg').value;
             formData['resp-cpf'] = document.getElementById('resp-cpf').value;
             formData['resp-telefone'] = document.getElementById('resp-telefone').value;
             formData['resp-email'] = document.getElementById('resp-email').value;
